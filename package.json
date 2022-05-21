@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:prod": "webpack --config webpack/webpack.prod.config.js",
-    "build:dev": "webpack --config webpack/webpack.dev.config.js"
+    "build:prod": "webpack --config webpack.prod.config.js",
+    "build:dev": "webpack --config webpack/webpack.dev.config.js",
+    "dev": "webpack serve --config webpack/webpack.dev.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
@@ -21,6 +22,7 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.1",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   }
 }
