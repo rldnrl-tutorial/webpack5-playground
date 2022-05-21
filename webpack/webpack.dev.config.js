@@ -8,8 +8,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.[contenthash].js',
-    path: resolve(__dirname, 'dist'),
-    publicPath: 'dist/',
+    path: resolve(__dirname, '../dist'),
+    publicPath: resolve(__dirname, '../dist'),
     assetModuleFilename: 'images/[hash][ext][query]'
   },
   module: {
@@ -45,5 +45,16 @@ module.exports = {
       title: 'Create React App'
     })
   ],
+  devServer: {
+    port: 3000,
+    static: {
+      directory: resolve(__dirname, '../dist'),
+    },
+    devMiddleware: {
+      index: true,
+      writeToDisk: true
+    },
+    hot: true
+  },
   mode: 'development'
 }
