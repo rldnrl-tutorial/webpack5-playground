@@ -1,0 +1,22 @@
+$xl: 1.5rem;
+$px-1: 0.25rem;
+$py-2: 0.5rem;
+$text-red-500: #00ddaa;
+
+.xl {
+  font-size: $xl;
+}
+
+.px-1 {
+  padding-left: $px-1;
+  padding-right: $px-1;
+}
+
+.py-2 {
+  padding-top: $py-2;
+  padding-bottom: $py-2;
+}
+
+.text-green-500 {
+  color: $text-red-500;
+}
