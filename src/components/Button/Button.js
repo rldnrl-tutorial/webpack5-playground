@@ -1,9 +1,11 @@
 import './style.css'
 
 class Button {
+  buttonCssClass = 'btn-1'
+  
   render() {
     const buttonElement = document.createElement('button')
-    buttonElement.classList.add('btn-1')
+    buttonElement.classList.add(this.buttonCssClass)
     buttonElement.innerText = 'Hell World'
     const body = document.querySelector('body')
     body.appendChild(buttonElement)
