@@ -23,13 +23,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _food_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 
-
 function addImage() {
-  const imageElement = document.createElement('img')
-  imageElement.src = _food_jpg__WEBPACK_IMPORTED_MODULE_0__
-  imageElement.alt = 'food'
-  const body = document.querySelector('body')
-  body.appendChild(imageElement)
+  var imageElement = document.createElement('img');
+  imageElement.src = _food_jpg__WEBPACK_IMPORTED_MODULE_0__;
+  imageElement.alt = 'food';
+  var body = document.querySelector('body');
+  body.appendChild(imageElement);
 }
 
 /***/ }),
@@ -48,9 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Button__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
 
 /***/ }),
 /* 5 */
@@ -61,27 +58,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-class Button {
-  render() {
-    const buttonElement = document.createElement('button')
-    buttonElement.classList.add('btn-1')
-    buttonElement.innerText = 'Hell World'
-    const body = document.querySelector('body')
-    body.appendChild(buttonElement)
 
-    buttonElement.onclick = function() {
-      const pElement = document.createElement('p')
-      pElement.classList.add('text-xl')
-      pElement.innerText = 'This is P tag'
-      body.appendChild(pElement)
-    }
+var Button = /*#__PURE__*/function () {
+  function Button() {
+    _classCallCheck(this, Button);
+
+    _defineProperty(this, "buttonCssClass", 'btn-1');
   }
-}
+
+  _createClass(Button, [{
+    key: "render",
+    value: function render() {
+      var buttonElement = document.createElement('button');
+      buttonElement.classList.add(this.buttonCssClass);
+      buttonElement.innerText = 'Hell World';
+      var body = document.querySelector('body');
+      body.appendChild(buttonElement);
+
+      buttonElement.onclick = function () {
+        var pElement = document.createElement('p');
+        pElement.classList.add('text-xl');
+        pElement.innerText = 'This is P tag';
+        body.appendChild(pElement);
+      };
+    }
+  }]);
+
+  return Button;
+}();
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
-
 
 /***/ }),
 /* 6 */
@@ -563,17 +578,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 
-class Heading {
-  render() {
-    const headingElement = document.createElement('h1')
-    headingElement.className = 'xl px-1 py-2 text-green-500'
-    headingElement.innerHTML = 'This is Heading Tag'
-    const body = document.querySelector('body')
-    body.appendChild(headingElement)
+
+var Heading = /*#__PURE__*/function () {
+  function Heading() {
+    _classCallCheck(this, Heading);
   }
-}
+
+  _createClass(Heading, [{
+    key: "render",
+    value: function render() {
+      var headingElement = document.createElement('h1');
+      headingElement.className = 'xl px-1 py-2 text-green-500';
+      headingElement.innerHTML = 'This is Heading Tag';
+      var body = document.querySelector('body');
+      body.appendChild(headingElement);
+    }
+  }]);
+
+  return Heading;
+}();
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading);
 
@@ -740,15 +770,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-const button = new _components_Button__WEBPACK_IMPORTED_MODULE_2__["default"]()
-button.render()
-
-const heading = new _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__["default"]()
-heading.render()
-
-;(0,_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"])()
-;(0,_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])()
+var button = new _components_Button__WEBPACK_IMPORTED_MODULE_2__["default"]();
+button.render();
+var heading = new _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__["default"]();
+heading.render();
+(0,_hello_world__WEBPACK_IMPORTED_MODULE_0__["default"])();
+(0,_add_image__WEBPACK_IMPORTED_MODULE_1__["default"])();
 })();
 
 /******/ })()
