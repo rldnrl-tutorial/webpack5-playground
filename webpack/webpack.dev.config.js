@@ -10,7 +10,8 @@ module.exports = {
     filename: 'bundle.[contenthash].js',
     path: resolve(__dirname, '../dist'),
     publicPath: resolve(__dirname, '../dist'),
-    assetModuleFilename: 'images/[hash][ext][query]'
+    assetModuleFilename: 'images/[hash][ext][query]',
+    clean: true
   },
   module: {
     rules: [
