@@ -6,12 +6,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const resolve = path.resolve
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    'hello-world': resolve(__dirname, '../src/pages/HelloWorldPage.js'),
+    'image-page': resolve(__dirname, '../src/pages/ImagePage.js')
+  },
   output: {
-    filename: 'bundle.[contenthash].js',
-    path: resolve(__dirname, 'dist'),
-    publicPath: 'dist/',
-    assetModuleFilename: 'images/[hash][ext][query]'
+    filename: '[name].[contenthash].js',
+    path: resolve(__dirname, '../dist'),
+    publicPath: resolve(__dirname, '../dist'),
+    assetModuleFilename: 'images/[hash][ext][query]',
+    clean: true
   },
   module: {
     rules: [
@@ -42,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles.[contenthash].css'
+      filename: '[name].[contenthash].css'
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
