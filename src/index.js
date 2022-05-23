@@ -9,5 +9,8 @@ button.render()
 const heading = new Heading()
 heading.render()
 
+const heading2 = new Heading()
+heading2.render()
+
 helloWorld()
 addImage()

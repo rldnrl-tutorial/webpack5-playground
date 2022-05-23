@@ -82,7 +82,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_world__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello-world */ \"./src/hello-world.js\");\n/* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add-image */ \"./src/add-image.js\");\n/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Button */ \"./src/components/Button/index.js\");\n/* harmony import */ var _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Heading/Heading */ \"./src/components/Heading/Heading.js\");\n\n\n\n\nvar button = new _components_Button__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.render();\nvar heading = new _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\nheading.render();\n(0,_hello_world__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_add_image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://webpack-playground/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_world__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello-world */ \"./src/hello-world.js\");\n/* harmony import */ var _add_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add-image */ \"./src/add-image.js\");\n/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Button */ \"./src/components/Button/index.js\");\n/* harmony import */ var _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Heading/Heading */ \"./src/components/Heading/Heading.js\");\n\n\n\n\nvar button = new _components_Button__WEBPACK_IMPORTED_MODULE_2__[\"default\"]();\nbutton.render();\nvar heading = new _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\nheading.render();\nvar heading2 = new _components_Heading_Heading__WEBPACK_IMPORTED_MODULE_3__[\"default\"]();\nheading2.render();\n(0,_hello_world__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_add_image__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://webpack-playground/./src/index.js?");
 
 /***/ }),
 
@@ -540,7 +540,7 @@ eval("module.exports = __webpack_require__.p + \"images/9ef4e358d9ef8d421fdb.jpg
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("79d7ce94b5ac75d0c969")
+/******/ 		__webpack_require__.h = () => ("e3363b719f8aad39ce63")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
