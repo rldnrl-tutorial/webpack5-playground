@@ -12,7 +12,8 @@ module.exports = {
     filename: 'bundle.[contenthash].js',
     path: resolve(__dirname, 'dist'),
     publicPath: 'dist/',
-    assetModuleFilename: 'images/[hash][ext][query]'
+    assetModuleFilename: 'images/[hash][ext][query]',
+    clean: true,
   },
   module: {
     rules: [
@@ -50,6 +51,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Create React App'
     })
-  ],
+  ],  
   mode: 'none'
 }
