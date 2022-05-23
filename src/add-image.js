@@ -1,4 +1,4 @@
-import food from './food.jpg'
+import food from './images/food.jpg'
 
 export default function addImage() {
   const imageElement = document.createElement('img')
