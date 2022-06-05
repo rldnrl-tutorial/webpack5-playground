@@ -10,7 +10,7 @@ module.exports = {
     'image-page': resolve(__dirname, '../src/pages/ImagePage.js')
   },
   output: {
-    filename: 'bundle.[contenthash].js',
+    filename: '[name].[contenthash].js',
     path: resolve(__dirname, '../dist'),
     publicPath: resolve(__dirname, '../dist'),
     assetModuleFilename: 'images/[hash][ext][query]',
@@ -43,8 +43,16 @@ module.exports = {
       }
     ],
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    }),
     new HtmlWebpackPlugin({
       filename: 'hello-world.html',
       chunks: ['hello-world'],
@@ -53,7 +61,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "image-page.html",
       chunks: ['image-page'],
-      title: 'Image Page'
+      title: 'Image Page',
     })
   ],
   devServer: {
