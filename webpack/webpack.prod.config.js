@@ -44,6 +44,11 @@ module.exports = {
       }
     ],
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
@@ -53,11 +58,13 @@ module.exports = {
       filename: 'hello-world.html',
       chunks: ['hello-world'],
       title: 'Hello World',
+      minify: false
     }),
     new HtmlWebpackPlugin({
       filename: "image-page.html",
       chunks: ['image-page'],
-      title: 'Image Page'
+      title: 'Image Page',
+      minify: false
     })
   ],
   mode: 'production'
