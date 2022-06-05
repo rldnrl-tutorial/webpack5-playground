@@ -5,7 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const resolve = path.resolve
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    'hello-world': resolve(__dirname, '../src/pages/HelloWorldPage.js'),
+    'image-page': resolve(__dirname, '../src/pages/ImagePage.js')
+  },
   output: {
     filename: 'bundle.[contenthash].js',
     path: resolve(__dirname, '../dist'),
@@ -43,7 +46,14 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Create React App'
+      filename: 'hello-world.html',
+      chunks: ['hello-world'],
+      title: 'Hello World',
+    }),
+    new HtmlWebpackPlugin({
+      filename: "image-page.html",
+      chunks: ['image-page'],
+      title: 'Image Page'
     })
   ],
   devServer: {

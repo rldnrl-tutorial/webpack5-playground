@@ -50,7 +50,14 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Create React App'
+      filename: 'hello-world.html',
+      chunks: ['hello-world'],
+      title: 'Hello World',
+    }),
+    new HtmlWebpackPlugin({
+      filename: "image-page.html",
+      chunks: ['image-page'],
+      title: 'Image Page'
     })
   ],
   mode: 'production'
