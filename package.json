@@ -6,7 +6,8 @@
   "scripts": {
     "build:prod": "webpack --config webpack/webpack.prod.config.js",
     "build:dev": "webpack --config webpack/webpack.dev.config.js",
-    "dev": "webpack serve --config webpack/webpack.dev.config.js"
+    "dev": "webpack serve --config webpack/webpack.dev.config.js",
+    "start": "node src/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.18.0",
